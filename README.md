@@ -29,13 +29,13 @@ By default the server will start on port 3000, however, this can be configured f
 To schedule the crawling of a URL, send a POST request using either CURL or [postman](https://www.getpostman.com/) to the endpoint `/schedule`, specifying `Content-Type: application/json` and the body
 ```json
 {
-    "url": {URL_TO_BE_CRAWLED}
+    "url": URL_TO_BE_CRAWLED
 }
 ```
 If provided with a valid URL, the response will be of the form 
 ```json
 {
-    "id": {SOME_UUID1}
+    "id": SOME_UUID1
 }
 ```
 where the value of `id` is used to retrieve the result of the result of the crawl from the crawler's other endpoint.
