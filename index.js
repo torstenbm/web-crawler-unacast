@@ -8,7 +8,6 @@ const urlRegex = require('url-regex');
 
 app.use(express.json());
 
-// In memory DB for scalability and security
 const DATABASE = {};
 
 const writeCrawlResultToDB = response => {
