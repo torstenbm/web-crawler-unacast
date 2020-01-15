@@ -18,12 +18,12 @@ before running the crawler to install the necessary dependencies.
 
 ## Starting the server
 
-Start the server by running either 
+Start the server by running  
 ```bash
 node index.js
 ```
 
-By default the server will start on port 3000, however, this can be configured inside of index.js.
+By default the server will start on port 3000, however, this can be configured from inside of index.js.
 
 ## Scheduling URL's to crawl
 To schedule the crawling of a URL, send a POST request using either CURL or [postman](https://www.getpostman.com/) to the endpoint `/schedule`, specifying `Content-Type: application/json` and the body
