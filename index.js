@@ -38,7 +38,7 @@ app.post('/schedule', (req, res) => {
 })
 
 app.get('/pages/:webPageId', (req, res) => {
-    const ID = req.params.webPageId
+    const ID = req.params.webPageId;
 
     if (!(ID in DATABASE)) {
         res.send({"error": "page not found in database"});
