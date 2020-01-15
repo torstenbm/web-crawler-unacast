@@ -43,7 +43,7 @@ app.get('/pages/:webPageId', (req, res) => {
         res.send({"error": "page not found in database"});
     }
     else {
-        const resultObj = DATABASE[req.params.webPageId];
+        const resultObj = DATABASE[ID];
         res.send(resultObj);
     }
 })
